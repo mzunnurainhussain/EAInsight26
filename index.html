@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI Cyber Nexus — a technical white paper from the OWASP Student Chapter at Bahria University Lahore Campus on security risks where AI and cybersecurity meet." />
+  <meta name="theme-color" content="#050816" />
+  <meta property="og:title" content="AI Cyber Nexus | OWASP Student Chapter — BULC" />
+  <meta property="og:description" content="Security risks where artificial intelligence and cybersecurity meet." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>AI Cyber Nexus | OWASP Student Chapter — BULC</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="AI Cyber Nexus home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-core">AI</span>
+          <span class="brand-ring ring-a"></span>
+          <span class="brand-ring ring-b"></span>
+        </span>
+        <span class="brand-copy">
+          <strong>AI Cyber Nexus</strong>
+          <small>OWASP Student Chapter · BULC</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#risks">Threats</a>
+        <a href="#field-notes">Field notes</a>
+        <a href="#event">Event</a>
+        <a class="nav-cta" href="/AI-Cyber-Nexus-Whitepaper.docx">Download paper <span>↗</span></a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-aurora aurora-a" aria-hidden="true"></div>
+      <div class="hero-aurora aurora-b" aria-hidden="true"></div>
+      <div class="hero-gridlines" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="live-chip"><span></span> WHITE PAPER · 2026</div>
+          <h1>Where <em>AI</em> meets <em>cybersecurity</em>, the attack surface changes.</h1>
+          <p class="lead">A practitioner-focused exploration of prompt injection, data and model poisoning, data leakage, and the security thinking required when language models reach real systems.</p>
+
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="#risks">Explore the threat landscape <span>→</span></a>
+            <a class="button ghost magnetic" href="/AI-Cyber-Nexus-Whitepaper.docx">Download white paper <span>↓</span></a>
+          </div>
+
+          <div class="publication-meta">
+            <div><span>Organised by</span><strong>OWASP Student Chapter · Bahria University Lahore Campus</strong></div>
+            <div><span>Faculty mentor</span><strong>Zunnurain Hussain</strong></div>
+            <div><span>Keynote</span><strong>Hamza Khan · Tkxel</strong></div>
+            <div><span>Co-speaker</span><strong>Abdullah Mehtab</strong></div>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal" aria-label="Animated AI cybersecurity visual">
+          <div class="orbit-system" aria-hidden="true">
+            <span class="orbit orbit-1"></span>
+            <span class="orbit orbit-2"></span>
+            <span class="orbit orbit-3"></span>
+            <i class="node node-1"></i><i class="node node-2"></i><i class="node node-3"></i>
+          </div>
+
+          <div class="terminal-card tilt-card">
+            <div class="terminal-topline">
+              <div class="terminal-dots"><i></i><i></i><i></i></div>
+              <span>AI-CYBER://NEXUS</span>
+              <b>SECURE</b>
+            </div>
+            <div class="terminal-lock">
+              <svg viewBox="0 0 240 240" role="img" aria-label="Cybersecurity lock symbol">
+                <defs>
+                  <linearGradient id="lockGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#68f6ff" />
+                    <stop offset="100%" stop-color="#8277ff" />
+                  </linearGradient>
+                </defs>
+                <path d="M76 104V75c0-28 18-47 44-47s44 19 44 47v29" />
+                <rect x="50" y="101" width="140" height="109" rx="24" />
+                <circle cx="120" cy="150" r="13" />
+                <path d="M120 163v24" />
+              </svg>
+              <div class="scanner"></div>
+            </div>
+            <div class="code-stack" aria-hidden="true">
+              <span><b>01</b> prompt_input <em>validated</em></span>
+              <span><b>02</b> retrieval_scope <em>isolated</em></span>
+              <span><b>03</b> output_channel <em>monitored</em></span>
+              <span><b>04</b> human_gate <em>enabled</em></span>
+            </div>
+          </div>
+
+          <div class="floating-tag tag-1"><span>01</span> PROMPT INJECTION</div>
+          <div class="floating-tag tag-2"><span>02</span> MODEL POISONING</div>
+          <div class="floating-tag tag-3"><span>03</span> DATA LEAKAGE</div>
+        </div>
+      </div>
+
+      <div class="hero-ticker" aria-label="Key themes">
+        <div class="ticker-track">
+          <span>LLM SECURITY</span><i>✦</i><span>PROMPT INJECTION</span><i>✦</i><span>AI SUPPLY CHAIN</span><i>✦</i><span>DATA LEAKAGE</span><i>✦</i><span>HUMAN-IN-THE-LOOP</span><i>✦</i>
+          <span>LLM SECURITY</span><i>✦</i><span>PROMPT INJECTION</span><i>✦</i><span>AI SUPPLY CHAIN</span><i>✦</i><span>DATA LEAKAGE</span><i>✦</i><span>HUMAN-IN-THE-LOOP</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview section-pad" id="overview">
+      <div class="container overview-grid">
+        <div class="section-kicker reveal">01 / WHY IT MATTERS</div>
+        <div class="overview-copy reveal">
+          <h2>Language models do not naturally separate <span>instructions</span> from <span>data</span>.</h2>
+          <p>A conventional application can reject malformed input. An LLM is designed to interpret what it receives, so a sentence buried in a document can become an instruction instead of inert content.</p>
+        </div>
+        <aside class="signal-card reveal">
+          <div class="signal-top"><span>SECURITY SIGNAL</span><b>01</b></div>
+          <div class="signal-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p>Model behaviour, retrieval architecture, permissions, and downstream tools form one connected security boundary.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="threats section-pad" id="risks">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-kicker">02 / THREAT LANDSCAPE</div>
+            <h2>Three risks the seminar put under the microscope.</h2>
+          </div>
+          <p>The white paper focuses on the attack paths students and early-career engineers are most likely to encounter when AI applications move from demo to production.</p>
+        </div>
+
+        <div class="threat-grid">
+          <article class="threat-card tilt-card reveal">
+            <div class="threat-head"><span>01</span><div class="threat-icon">&gt;_</div></div>
+            <h3>Prompt injection</h3>
+            <p>Malicious content is interpreted as a new instruction. The indirect form is especially dangerous when the instruction is hidden inside data the model retrieves on its own.</p>
+            <div class="defense-line"><span>DEFENCE</span><p>Constrain actions, treat model output as untrusted, and require human approval where consequences matter.</p></div>
+            <div class="card-scan" aria-hidden="true"></div>
+          </article>
+
+          <article class="threat-card tilt-card reveal">
+            <div class="threat-head"><span>02</span><div class="threat-icon">DNA</div></div>
+            <h3>Data &amp; model poisoning</h3>
+            <p>Tampered training or fine-tuning data can shape later behaviour or introduce trigger-based failure modes. Public models, datasets, and libraries widen the AI supply-chain boundary.</p>
+            <div class="defense-line"><span>DEFENCE</span><p>Track provenance, trust boundaries, dependencies, and the origin of every component entering the model pipeline.</p></div>
+            <div class="card-scan" aria-hidden="true"></div>
+          </article>
+
+          <article class="threat-card tilt-card reveal">
+            <div class="threat-head"><span>03</span><div class="threat-icon">◫</div></div>
+            <h3>Data extraction &amp; leakage</h3>
+            <p>A model can expose training fragments, secrets, hidden prompts, or another user's records when retrieval and access controls are too permissive.</p>
+            <div class="defense-line"><span>DEFENCE</span><p>Use least privilege, tenant isolation, secret hygiene, output controls, and retrieval-aware authorization.</p></div>
+            <div class="card-scan" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="field-notes section-pad" id="field-notes">
+      <div class="container field-grid">
+        <div class="photo-shell reveal">
+          <figure class="photo-frame">
+            <img src="/assets/data-exfiltration.jpg" alt="Attendees during the AI Cyber Nexus data exfiltration segment" loading="lazy" />
+            <figcaption><span>FIELD NOTE · 01</span> Attendees during the data exfiltration segment of the talk.</figcaption>
+          </figure>
+          <div class="photo-badge">LIVE SESSION<br><strong>BULC</strong></div>
+        </div>
+
+        <div class="field-copy reveal">
+          <div class="section-kicker">03 / FROM THE ROOM</div>
+          <h2>Security becomes real the moment an AI system can reach real data.</h2>
+          <p>The discussion moved past model behaviour into retrieval stores, access controls, downstream tools, and the trust assumptions inherited from third-party components.</p>
+          <blockquote>“The model is trying to be helpful, and helpfulness is the weakness.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="dual-use section-pad">
+      <div class="container dual-layout">
+        <div class="dual-copy reveal">
+          <div class="section-kicker">04 / DUAL USE</div>
+          <h2>The same tooling can amplify both sides.</h2>
+          <p>Defenders use machine learning to identify unusual behaviour in traffic and logs. Attackers can use the same capability to scale phishing, reconnaissance, and repetitive intrusion tasks.</p>
+          <div class="dual-bars">
+            <div><span>DEFENSIVE</span><i><b style="--w:82%"></b></i><small>Anomaly spotting · log analysis</small></div>
+            <div><span>OFFENSIVE</span><i><b style="--w:74%"></b></i><small>Phishing · scale · automation</small></div>
+          </div>
+        </div>
+
+        <figure class="feature-photo reveal">
+          <img src="/assets/keynote-threat-landscape.jpg" alt="Keynote speaker presenting the AI-driven phishing threat landscape" loading="lazy" />
+          <figcaption>Keynote coverage of AI-driven phishing under the threat landscape section.</figcaption>
+          <div class="photo-overlay"><span>AI × CYBER</span><b>THREAT LANDSCAPE</b></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="playbook section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-kicker">05 / START HERE</div>
+            <h2>A practical learning playbook.</h2>
+          </div>
+          <p>The speakers' advice was deliberately hands-on: learn the foundations, build something small, and then test where it breaks.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-index">01</div><div class="timeline-dot"></div>
+            <div><span>FOUNDATION</span><h3>Master application-security fundamentals</h3><p>LLM risks sit on top of ordinary web and application security—not instead of it.</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-index">02</div><div class="timeline-dot"></div>
+            <div><span>BUILD</span><h3>Stand up a small LLM application</h3><p>Create something you understand end-to-end before trying to secure larger systems.</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-index">03</div><div class="timeline-dot"></div>
+            <div><span>BREAK</span><h3>Attack your own controlled environment</h3><p>Try to expose its system prompt or make it follow an instruction hidden in a document it reads.</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-index">04</div><div class="timeline-dot"></div>
+            <div><span>GO DEEP</span><h3>Choose defensive tooling or offensive testing</h3><p>Depth in one direction is more useful than skimming both without practical experience.</p></div>
+          </article>
+        </div>
+
+        <div class="terminal-callout reveal">
+          <div class="prompt"><span>$</span> readiness_check</div>
+          <p>No expensive lab required. Start with a laptop, a controlled environment, and the willingness to break something you built on purpose.</p>
+          <div class="terminal-caret" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event section-pad" id="event">
+      <div class="container event-grid">
+        <div class="event-copy reveal">
+          <div class="section-kicker">06 / ABOUT THE EVENT</div>
+          <h2>Campus learning connected directly to industry practice.</h2>
+          <p>The seminar was hosted by the OWASP Student Chapter at Bahria University Lahore Campus under the mentorship of Zunnurain Hussain. Hamza Khan of Tkxel delivered the keynote, with Abdullah Mehtab as co-speaker.</p>
+          <p>The room mixed students, faculty, and industry participants, and the questions pushed the discussion beyond theory toward the realities of production systems.</p>
+          <div class="pill-row"><span>OWASP Student Chapter</span><span>Bahria University Lahore Campus</span><span>2026</span></div>
+        </div>
+
+        <div class="event-visual reveal">
+          <figure class="feature-photo wide-photo">
+            <img src="/assets/keynote-appreciation.jpg" alt="Token of appreciation presented to the keynote speaker at AI Cyber Nexus" loading="lazy" />
+            <figcaption>A token of appreciation for the keynote speaker in front of the AI Cyber Nexus standee.</figcaption>
+          </figure>
+          <div class="event-stamp" aria-hidden="true"><span>AI</span><b>CYBER<br>NEXUS</b><small>2026</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="owasp section-pad">
+      <div class="container owasp-panel reveal">
+        <div class="owasp-watermark" aria-hidden="true">OWASP</div>
+        <div class="owasp-icon">O</div>
+        <div>
+          <div class="section-kicker">ABOUT OWASP</div>
+          <h2>Open, vendor-neutral application security guidance.</h2>
+          <p>The Open Worldwide Application Security Project is a nonprofit community that publishes free security guidance, including the Top 10 for LLM Applications referenced in the white paper.</p>
+        </div>
+        <a class="button ghost" href="/AI-Cyber-Nexus-Whitepaper.docx">Read the full paper <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-card reveal">
+        <div class="final-orb" aria-hidden="true"></div>
+        <div>
+          <span>AI CYBER NEXUS · WHITE PAPER</span>
+          <h2>Build secure AI by understanding how it fails.</h2>
+        </div>
+        <a class="button primary magnetic" href="/AI-Cyber-Nexus-Whitepaper.docx">Download publication <span>↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><span class="brand-mini">AI</span><div><strong>AI Cyber Nexus</strong><p>OWASP Student Chapter · Bahria University Lahore Campus</p></div></div>
+      <div class="footer-links"><a href="#top">Back to top ↑</a><a href="/AI-Cyber-Nexus-Whitepaper.docx">White paper ↗</a></div>
+      <div class="copyright">Published 2026</div>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
